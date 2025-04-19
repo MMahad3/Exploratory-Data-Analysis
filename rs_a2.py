@@ -21,10 +21,10 @@ import seaborn as sns
 url = "https://raw.githubusercontent.com/sidooms/MovieTweetings/master/snapshots/100K/ratings.dat"
 df = pd.read_csv(url, sep='::', engine='python', names=['user_id', 'movie_id', 'rating', 'timestamp'])
 
-# Preview the data
+
 df.head()
 
-# General info
+
 print("Shape:", df.shape)
 print(df.info())
 print(df.describe())
